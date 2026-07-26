@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "PhysioClinic Website"
+version = "1.0.0"
+id = "artifacts/physio-clinic"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24002
+
+[services.development]
+run = "pnpm --filter @workspace/physio-clinic run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/physio-clinic", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/physio-clinic/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24002"
+BASE_PATH = "/"
