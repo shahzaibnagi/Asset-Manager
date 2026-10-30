@@ -1,3 +1,11 @@
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080b10,100:1f6feb&height=150&section=header&text=Asset-Manager&fontSize=32&fontColor=eaf0f7&animation=fadeIn&desc=TypeScript%20%C2%B7%20pnpm%20workspaces&descAlignY=76&descSize=14" alt="Asset-Manager" />
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=1200&color=34D399&center=true&vCenter=true&width=560&lines=Express%20API%20%2B%20front-end%20sandbox;Shared%20types%20across%20packages" alt="tagline" />
+
+</div>
+
 # Asset Manager
 
 <p align="center">
